@@ -49,3 +49,9 @@ MIT
 
         st.subheader("Generated README")
         st.code(readme, language="markdown")
+        st.download_button(
+    label="📥 Download README.md",
+    data=readme,
+    file_name="README.md",
+    mime="text/markdown"
+)
