@@ -1,5 +1,7 @@
 # AI README Generator
 
+![Application Screenshot](screenshot.png)
+
 AI README Generator is a simple open-source tool built with Python and Streamlit that helps developers generate professional GitHub README files in seconds.
 
 ## Features
