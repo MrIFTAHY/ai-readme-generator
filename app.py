@@ -17,10 +17,25 @@ features = st.text_area("Main Features")
 installation = st.text_area("Installation Steps")
 usage = st.text_area("Usage Instructions")
 
+license_type = st.selectbox(
+    "License Type",
+    ["MIT", "Apache 2.0", "GPL v3", "BSD 3-Clause", "No License"]
+)
+
+template_type = st.selectbox(
+    "Project Type",
+    ["General Project", "AI Project", "Web App", "Python Package"]
+)
+
 if st.button("Generate README"):
     if project_name and description:
 
         readme = f"""# {project_name}
+
+              
+## Project Type
+
+{template_type}
 
 ## Description
 
@@ -44,7 +59,7 @@ if st.button("Generate README"):
 
 ## License
 
-MIT
+{license_type}
 """
 
         st.subheader("Generated README")
